@@ -1,15 +1,17 @@
 <div class="private-square span4 offset2 text-center">
   
   <h1>
-  Upload an image
+  Upload an Image
 </h1>
   
   <br/>
 
 <%= simple_form_for @post do |f| %>
-  <%= f.input :title, label: 'Title of picture', placeholder: 'Who is this?' %>
+  <%= f.input :title, label: 'Title of Picture', placeholder: 'Who is this?' %>
   <br/>
-  <%= f.input :description, label: 'What is happening?', placeholder: 'He is happy' %>
+  <%= f.input :description, label: 'What is happening?', placeholder: 'e.g. Lazers' %>
+  <br/>
+  <%= f.input :image %>
   <br/>
   <%= f.button :submit, :class => 'btn btn-danger btn-large' %>
   <br/>
